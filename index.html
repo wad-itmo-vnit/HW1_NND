@@ -25,45 +25,60 @@
     <div id="main">
         <div class="container">
             <div class="img-container">
-                <img class="img-small" src="pics/IMG_9551.jpg" alt="9551"/>
+                <img src="pics/1.jpg" id="1" alt="9551" onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-small" src="pics/IMG_9536.jpg">
+                <img src="pics/2.jpg" id="2" alt="9536" onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-small" src="pics/IMG_9548.jpg">
+                <img src="pics/3.jpg" id="3" alt="9548"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_1056.jpg">
+                <img src="pics/4.jpg" id="4" alt="1056"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_9276.jpg">
+                <img src="pics/5.jpg" id="5" alt="9276"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_1052.jpg">
+                <img src="pics/6.jpg" id="6" alt="1052"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_0865.jpg">
+                <img src="pics/7.jpg" id="7" alt="0865"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_0786.jpg">
+                <img src="pics/8.jpg" id="8" alt="0786"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_0546.jpg">
+                <img src="pics/9.jpg" id="9" alt="0546" onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/20200626230748_IMG_0056.JPG">
+                <img src="pics/10.jpg" id="10" alt="0056"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_9507.JPG">
+                <img src="pics/11.jpg" id="11" alt="9507"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_9526.jpg">
+                <img src="pics/12.jpg" id="12" alt="9526"onclick="onClick(this)">
             </div>
             <div class="img-container">
-                <img class="img-large" src="pics/IMG_9495.JPG">
+                <img src="pics/13.jpg" id="13" alt="9495"onclick="onClick(this)">
             </div>
         </div>
+
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+            <span class="close">&times;&nbsp;&nbsp;&nbsp;</span>
+            <div class="modal-content">
+                <img id="img01" style="max-width:100%">
+            </div>
+        </div>
+
     </div>
+
+    <script>
+        function onClick(element) {
+            document.getElementById("img01").src = element.src;
+            document.getElementById("modal01").style.display = "block";
+        }
+    </script>
 </body>
 </html>
